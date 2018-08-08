@@ -101,4 +101,19 @@ public class DefaultEventManagerTest
     public void testAddValidKeyWithNullListener() {
         eventManager.registerListener("bogus.key", null);
     }
+    
+    @Test
+    public void testUnfilteredEventListening() {
+    	SpecificTestEvent testEventOne = new SpecificTestEvent();
+    	MockEventListener allEventsListener = new MockEventListener(new Class[] {});
+    	MockEventListener allEventsListener2 = new MockEventListener(new Class[] {});
+    	
+    	eventManager.registerListener("key.one", allEventsListener);
+    	eventManager.registerListener("key.two", allEventsListener2);
+    	
+    	eventManager.publishEvent(testEventOne);
+    	assertTrue(allEventsListener.isCalled());
+    	assertTrue(allEventsListener2.isCalled());
+    	
+    }
 }

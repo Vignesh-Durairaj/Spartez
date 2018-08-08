@@ -33,7 +33,17 @@ public class DefaultEventManager implements EventManager
 
     private Collection<EventListener> calculateListeners(Class eventClass)
     {
-        return listenersByClass.get(eventClass);
+    	Collection<EventListener> allListeners = new ArrayList<>();
+    	
+    	// Adding listeners monitoring all the events without any filter
+    	if (listenersByClass.get(null) != null)
+    		allListeners.addAll(listenersByClass.get(null));
+    	
+    	// Adding listeners monitoring only the target event class
+    	if (listenersByClass.get(eventClass) != null) 
+    		allListeners.addAll(listenersByClass.get(eventClass));
+        
+    	return allListeners;
     }
 
     @Override
@@ -50,9 +60,15 @@ public class DefaultEventManager implements EventManager
 
         Class[] classes = listener.getHandledEventClasses();
 
-        for (final Class aClass : classes)
-        {
-            addToListenerList(aClass, listener);
+        // Changes made to add a listener monitoring all the events without filter, with NULL as a key
+        // Since event class was unknown while registering
+        if (classes.length == 0) {
+        	addToListenerList(null, listener);
+        } else {
+        	for (final Class aClass : classes)
+            {
+                addToListenerList(aClass, listener);
+            }
         }
 
         listeners.put(listenerKey, listener);
