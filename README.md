@@ -1,3 +1,6 @@
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/26351e02f2c5401e975281183b73387b)](https://app.codacy.com/app/Vignesh-Durairaj/Spartez?utm_source=github.com&utm_medium=referral&utm_content=Vignesh-Durairaj/Spartez&utm_campaign=Badge_Grade_Dashboard)
+
 **Coding challenges for SPARTEZ interview**
 
 Below are the set of challenges thrown at me as a part of interview process for Spartez @ Poland. The challenge consists of three coding challenges as below
