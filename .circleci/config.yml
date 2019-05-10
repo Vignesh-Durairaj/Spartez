@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+   codecov: codecov/codecov@1.0.4
 jobs:
    build:
       working_directory: ~/Spartez
@@ -16,5 +18,8 @@ jobs:
          - run: mvn package
          - store_test_results: 
             path: target/surefire-reports
+         - codecov/upload:
+            file: target/my-reports/jacoco.xml
+            token: 85b95117-ef42-48ae-941e-1c5e068019c3
          - store_artifacts: 
             path: target/Spartez-0.0.1-SNAPSHOT.jar
