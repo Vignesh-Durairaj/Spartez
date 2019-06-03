@@ -1,6 +1,6 @@
 
 [![CircleCI](https://circleci.com/gh/Vignesh-Durairaj/Spartez.svg?style=svg)](https://circleci.com/gh/Vignesh-Durairaj/Spartez) 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/26351e02f2c5401e975281183b73387b)](https://app.codacy.com/app/Vignesh-Durairaj/Spartez?utm_source=github.com&utm_medium=referral&utm_content=Vignesh-Durairaj/Spartez&utm_campaign=Badge_Grade_Dashboard) [![Code Coverage](https://codecov.io/gh/Vignesh-Durairaj/Spartez/branch/master/graph/badge.svg)](https://codecov.io/gh/Vignesh-Durairaj/Spartez)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/26351e02f2c5401e975281183b73387b)](https://app.codacy.com/app/Vignesh-Durairaj/Spartez?utm_source=github.com&utm_medium=referral&utm_content=Vignesh-Durairaj/Spartez&utm_campaign=Badge_Grade_Dashboard) [![Code Coverage](https://codecov.io/gh/Vignesh-Durairaj/Spartez/branch/master/graph/badge.svg)](https://codecov.io/gh/Vignesh-Durairaj/Spartez) ![Twitter Follow](https://img.shields.io/twitter/follow/vigneshdurairaj.svg?style=social)
 
 **Coding challenges for SPARTEZ interview**
 
